@@ -1,4 +1,4 @@
-# Architecture Decision Record: Navigation Strategy
+# Architecture Decision Record: Hardware
 
 Contents:
 
