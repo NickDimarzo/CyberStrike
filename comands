@@ -1,0 +1,7 @@
+// Import the useNavigation hook from the @react-navigation/native package
+// I ran this command in the terminal to install the package
+// npm install @react-navigation/native
+
+// Import the Orientation Locking package
+// I ran this command in the terminal to install the package
+// npm install react-native-orientation-locker --save

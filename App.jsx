@@ -18,27 +18,19 @@ import {
   useColorScheme,
   View,
 } from 'react-native';
-
-import {
-  Colors,
-  DebugInstructions,
-  Header,
-  LearnMoreLinks,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
-
-// Import the Orientation Locking package
-// I ran this command in the terminal to install the package
-// npm install react-native-orientation-locker --save
+import {useNavigation} from '@react-navigation/native';
 import Orientation from 'react-native-orientation-locker';
 
 function App() {
   // Lock the orientation to landscape
   Orientation.lockToLandscape();
 
+  // Get the navigation object
+  const navigation = useNavigation();
+
   // alerts the user when the button is pressed
  const _onPressButton = () => {
-    alert('You tapped the button!');
+    navigation.navigate('');
   };
 
   return (
