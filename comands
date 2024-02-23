@@ -1,0 +1,15 @@
+// Import the Orientation Locking package
+// I ran this command in the terminal to install the package
+// npm install react-native-orientation-locker --save
+
+// Import the useNavigation hook from the @react-navigation/native package
+// I ran this command in the terminal to install the package
+// npm install @react-navigation/native
+
+// Installing the dependencies for react-navigation
+// I ran this command in the terminal to install the package
+// npm install react-native-screens react-native-safe-area-context
+
+// Installing the dependencies for native stack navigator library
+// I ran this command in the terminal to install the package
+// npm install @react-navigation/native-stack
