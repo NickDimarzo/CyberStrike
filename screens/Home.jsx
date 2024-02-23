@@ -1,4 +1,4 @@
-import react from 'react';
+import React from 'react';
 import {
   Image,
   Pressable,
@@ -30,7 +30,7 @@ export default function Home() {
             source={require('../assets/images/title_image.jpg')}
             style={styles.image}
           />
-          <TouchableHighlight onPress={() => navigation.navigate("SceneOne")}>
+          <TouchableHighlight onPress={() => navigation.navigate("ActSelection")}>
             <View style={styles.button}>
               <Text style={styles.buttonText}>Start Game</Text>
             </View>

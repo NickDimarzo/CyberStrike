@@ -21,7 +21,8 @@ import {
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import Home from './screens/Home';
-import SceneOne from './screens/SceneOne';
+import ActSelection from './screens/acts/ActSelection';
+import SceneOne from './screens/acts/act1/SceneOne';
 
 const Stack = createNativeStackNavigator();
 
@@ -30,6 +31,7 @@ function App() {
     <NavigationContainer>
       <Stack.Navigator screenOptions={{headerShown: false}}>
         <Stack.Screen name="Home" component={Home} />
+        <Stack.Screen name="ActSelection" component={ActSelection} />
         <Stack.Screen name="SceneOne" component={SceneOne} />
       </Stack.Navigator>
     </NavigationContainer>
