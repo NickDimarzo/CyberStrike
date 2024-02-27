@@ -16,7 +16,6 @@ import Orientation from 'react-native-orientation-locker';
 import {useNavigation} from '@react-navigation/native';
 
 export default function SceneOne() {
-    
   // Lock the orientation to landscape
   Orientation.lockToLandscape();
 
@@ -24,12 +23,27 @@ export default function SceneOne() {
 
   return (
     <ImageBackground
-    source={require('../../../assets/images/scene_one_backround.png')}
+      source={require('../../../assets/images/scene_one_backround.png')}
       style={{flex: 1}}>
       <Pressable onPress={() => navigation.navigate('Home')}>
         <View style={styles.button}>
           <Text style={styles.buttonText}>Action 1</Text>
         </View>
+      </Pressable>
+      <Pressable>
+        <ImageBackground
+          source={require('../../../images/cyberStrikeImages/assets/buttonIndividual.png')}
+          style={styles.test}
+          >
+          <Text>Test</Text>
+        </ImageBackground>
+      </Pressable>
+      <Pressable>
+        <ImageBackground
+          source={require('../../../images/cyberStrikeImages/assets/buttonIndividual.png')}
+          >
+          <Text>Test</Text>
+        </ImageBackground>
       </Pressable>
     </ImageBackground>
   );
@@ -51,5 +65,9 @@ const styles = StyleSheet.create({
     fontSize: 10,
     color: 'white',
     textAlign: 'center',
+  },
+  test: {
+   
+    
   },
 });
